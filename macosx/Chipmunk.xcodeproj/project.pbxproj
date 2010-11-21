@@ -6,7 +6,65 @@
 	objectVersion = 45;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		35B028961299B4D900D4689B /* Chipmunk-iOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 35B028A51299B53C00D4689B /* Build configuration list for PBXAggregateTarget "Chipmunk-iOS" */;
+			buildPhases = (
+				35B028A31299B51E00D4689B /* Build static lib */,
+				35B028B81299B59C00D4689B /* Build universal lib */,
+				35B028C71299B61D00D4689B /* Copy Headers */,
+				35B0291B1299B72C00D4689B /* Copy Constraints */,
+				35B028C81299B61D00D4689B /* Copy Resources */,
+			);
+			dependencies = (
+				35B0289F1299B4F300D4689B /* PBXTargetDependency */,
+			);
+			name = "Chipmunk-iOS";
+			productName = "Chipmunk-iOS";
+		};
+		35B028991299B4E700D4689B /* Cleanup Chipmunk-iOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 35B028A41299B53C00D4689B /* Build configuration list for PBXAggregateTarget "Cleanup Chipmunk-iOS" */;
+			buildPhases = (
+				35B028A11299B4FA00D4689B /* Cleanup */,
+			);
+			dependencies = (
+			);
+			name = "Cleanup Chipmunk-iOS";
+			productName = "Clean Chipmunk-iOS";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
+		35B028F41299B67900D4689B /* chipmunk.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = D3E5F0C40AA75CC3004E361B /* chipmunk.h */; };
+		35B028F51299B67900D4689B /* chipmunk_types.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = D39F478A0FD4AB4E00B244CA /* chipmunk_types.h */; };
+		35B028F61299B67900D4689B /* chipmunk_unsafe.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = D35420BF0F4E1FD70017F4F7 /* chipmunk_unsafe.h */; };
+		35B028F71299B67900D4689B /* chipmunk_ffi.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = D36C44DD10F53DEB003D48B5 /* chipmunk_ffi.h */; };
+		35B028F81299B67900D4689B /* cpBody.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = D3E5F0DD0AAA2273004E361B /* cpBody.h */; };
+		35B028F91299B68500D4689B /* cpSpaceHash.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = D3E5F2DE0AAA562B004E361B /* cpSpaceHash.h */; };
+		35B028FA1299B68500D4689B /* cpArbiter.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = D3E5F0C10AA75CA9004E361B /* cpArbiter.h */; };
+		35B028FB1299B68500D4689B /* cpShape.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = D37E22FC0AAA63B800BB4C50 /* cpShape.h */; };
+		35B028FC1299B68500D4689B /* cpPolyShape.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = D3BC99AC0AB381AF0025A2C0 /* cpPolyShape.h */; };
+		35B028FD1299B68500D4689B /* cpCollision.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = D37E231E0AAA728A00BB4C50 /* cpCollision.h */; };
+		35B028FE1299B69100D4689B /* cpSpace.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = D3E5F2CE0AAA5589004E361B /* cpSpace.h */; };
+		35B028FF1299B69F00D4689B /* cpVect.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = D3E5F0270AA32F16004E361B /* cpVect.h */; };
+		35B029001299B69F00D4689B /* cpBB.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = D3E5F2D90AAA5622004E361B /* cpBB.h */; };
+		35B029011299B69F00D4689B /* cpArray.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = D3E5F2DC0AAA562B004E361B /* cpArray.h */; };
+		35B029021299B69F00D4689B /* prime.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = D353B6480B059C5F0038D274 /* prime.h */; };
+		35B029031299B69F00D4689B /* cpHashSet.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = D30CE25E0B52535500427129 /* cpHashSet.h */; };
+		35B029051299B70D00D4689B /* util.h in Copy Constraints */ = {isa = PBXBuildFile; fileRef = D3800E3A0E9820B900A3D7FA /* util.h */; };
+		35B029061299B70D00D4689B /* cpConstraint.h in Copy Constraints */ = {isa = PBXBuildFile; fileRef = D3800E0F0E9815FC00A3D7FA /* cpConstraint.h */; };
+		35B029071299B70D00D4689B /* cpPinJoint.h in Copy Constraints */ = {isa = PBXBuildFile; fileRef = D3800E1C0E98176F00A3D7FA /* cpPinJoint.h */; };
+		35B029081299B70D00D4689B /* cpSlideJoint.h in Copy Constraints */ = {isa = PBXBuildFile; fileRef = D3800EA70E98260200A3D7FA /* cpSlideJoint.h */; };
+		35B029091299B70D00D4689B /* cpPivotJoint.h in Copy Constraints */ = {isa = PBXBuildFile; fileRef = D3800EA50E98260200A3D7FA /* cpPivotJoint.h */; };
+		35B0290A1299B70D00D4689B /* cpGrooveJoint.h in Copy Constraints */ = {isa = PBXBuildFile; fileRef = D3800EA10E98260200A3D7FA /* cpGrooveJoint.h */; };
+		35B0290B1299B70D00D4689B /* cpDampedSpring.h in Copy Constraints */ = {isa = PBXBuildFile; fileRef = D38011600E984FA400A3D7FA /* cpDampedSpring.h */; };
+		35B0290C1299B70D00D4689B /* cpDampedRotarySpring.h in Copy Constraints */ = {isa = PBXBuildFile; fileRef = D36B192E0EA1364E0028A362 /* cpDampedRotarySpring.h */; };
+		35B0290D1299B70D00D4689B /* cpRotaryLimitJoint.h in Copy Constraints */ = {isa = PBXBuildFile; fileRef = D37BB76D0EAADA6300C70958 /* cpRotaryLimitJoint.h */; };
+		35B0290E1299B70D00D4689B /* cpRatchetJoint.h in Copy Constraints */ = {isa = PBXBuildFile; fileRef = D36D87821012D63600DB5078 /* cpRatchetJoint.h */; };
+		35B0290F1299B70D00D4689B /* cpGearJoint.h in Copy Constraints */ = {isa = PBXBuildFile; fileRef = D37BB8B20EAB01E400C70958 /* cpGearJoint.h */; };
+		35B029101299B70D00D4689B /* cpSimpleMotor.h in Copy Constraints */ = {isa = PBXBuildFile; fileRef = D37BB8EF0EAB06B600C70958 /* cpSimpleMotor.h */; };
 		D3102B171119FD3000E77771 /* Tank.c in Sources */ = {isa = PBXBuildFile; fileRef = D3102B161119FD3000E77771 /* Tank.c */; };
 		D31402950E9DD07E00EF79DB /* Springies.c in Sources */ = {isa = PBXBuildFile; fileRef = D31402940E9DD07E00EF79DB /* Springies.c */; };
 		D31847750FC458FD00E30B0D /* Query.c in Sources */ = {isa = PBXBuildFile; fileRef = D31847740FC458FD00E30B0D /* Query.c */; };
@@ -107,6 +165,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		35B0289E1299B4F300D4689B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3E5F0190AA32EAC004E361B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35B028991299B4E700D4689B /* Clean Chipmunk-iOS */;
+			remoteInfo = "Clean Chipmunk-iOS";
+		};
 		D38687D10BAFC688008B7008 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D3E5F0190AA32EAC004E361B /* Project object */;
@@ -115,6 +180,67 @@
 			remoteInfo = ChipmunkStatic;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		35B028C71299B61D00D4689B /* Copy Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal/${PRODUCT_NAME}.framework/Headers";
+			dstSubfolderSpec = 0;
+			files = (
+				35B028FF1299B69F00D4689B /* cpVect.h in Copy Headers */,
+				35B029001299B69F00D4689B /* cpBB.h in Copy Headers */,
+				35B029011299B69F00D4689B /* cpArray.h in Copy Headers */,
+				35B029021299B69F00D4689B /* prime.h in Copy Headers */,
+				35B029031299B69F00D4689B /* cpHashSet.h in Copy Headers */,
+				35B028F41299B67900D4689B /* chipmunk.h in Copy Headers */,
+				35B028F51299B67900D4689B /* chipmunk_types.h in Copy Headers */,
+				35B028F61299B67900D4689B /* chipmunk_unsafe.h in Copy Headers */,
+				35B028F71299B67900D4689B /* chipmunk_ffi.h in Copy Headers */,
+				35B028F81299B67900D4689B /* cpBody.h in Copy Headers */,
+				35B028F91299B68500D4689B /* cpSpaceHash.h in Copy Headers */,
+				35B028FA1299B68500D4689B /* cpArbiter.h in Copy Headers */,
+				35B028FB1299B68500D4689B /* cpShape.h in Copy Headers */,
+				35B028FC1299B68500D4689B /* cpPolyShape.h in Copy Headers */,
+				35B028FD1299B68500D4689B /* cpCollision.h in Copy Headers */,
+				35B028FE1299B69100D4689B /* cpSpace.h in Copy Headers */,
+			);
+			name = "Copy Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35B028C81299B61D00D4689B /* Copy Resources */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal/${PRODUCT_NAME}.framework/Resources";
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			name = "Copy Resources";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35B0291B1299B72C00D4689B /* Copy Constraints */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal/${PRODUCT_NAME}.framework/Headers/constraints";
+			dstSubfolderSpec = 0;
+			files = (
+				35B029051299B70D00D4689B /* util.h in Copy Constraints */,
+				35B029061299B70D00D4689B /* cpConstraint.h in Copy Constraints */,
+				35B029071299B70D00D4689B /* cpPinJoint.h in Copy Constraints */,
+				35B029081299B70D00D4689B /* cpSlideJoint.h in Copy Constraints */,
+				35B029091299B70D00D4689B /* cpPivotJoint.h in Copy Constraints */,
+				35B0290A1299B70D00D4689B /* cpGrooveJoint.h in Copy Constraints */,
+				35B0290B1299B70D00D4689B /* cpDampedSpring.h in Copy Constraints */,
+				35B0290C1299B70D00D4689B /* cpDampedRotarySpring.h in Copy Constraints */,
+				35B0290D1299B70D00D4689B /* cpRotaryLimitJoint.h in Copy Constraints */,
+				35B0290E1299B70D00D4689B /* cpRatchetJoint.h in Copy Constraints */,
+				35B0290F1299B70D00D4689B /* cpGearJoint.h in Copy Constraints */,
+				35B029101299B70D00D4689B /* cpSimpleMotor.h in Copy Constraints */,
+			);
+			name = "Copy Constraints";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D30CE25D0B52535500427129 /* cpHashSet.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = cpHashSet.c; sourceTree = "<group>"; };
@@ -499,6 +625,8 @@
 				D3E5F0480AA32FDE004E361B /* ChipmunkDemo */,
 				D34963BA0B56CAA300CAD239 /* ChipmunkStatic */,
 				D3C3787911063B1B003EF1D9 /* ChipmunkStatic-iPhone */,
+				35B028991299B4E700D4689B /* Cleanup Chipmunk-iOS */,
+				35B028961299B4D900D4689B /* Chipmunk-iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -512,6 +640,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35B028A11299B4FA00D4689B /* Cleanup */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Cleanup;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Paths\nUNIVERSAL_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal\"\nFRAMEWORK=\"${UNIVERSAL_LIBRARY_DIR}/${PROJECT_NAME}-iOS.framework\"\n\n# Cleanup\nrm -rf \"${FRAMEWORK}\" &>/dev/null\n\nexit 0";
+		};
+		35B028A31299B51E00D4689B /* Build static lib */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build static lib";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "xcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphonesimulator4.1 -target ${PROJECT_NAME}Static-iPhone -configuration ${CONFIGURATION} build\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphoneos4.1 -target ${PROJECT_NAME}Static-iPhone -configuration ${CONFIGURATION} build";
+		};
+		35B028B81299B59C00D4689B /* Build universal lib */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build universal lib";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Paths\nSIMULATOR_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${PROJECT_NAME}-iPhone.a\"\nDEVICE_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${PROJECT_NAME}-iPhone.a\"\nUNIVERSAL_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal\"\nUNIVERSAL_LIBRARY_PATH=\"${UNIVERSAL_LIBRARY_DIR}/${PRODUCT_NAME}\"\nFRAMEWORK=\"${UNIVERSAL_LIBRARY_DIR}/${PRODUCT_NAME}.framework\"\n\n# Create framework directory structure.\nrm -rf \"${FRAMEWORK}\" &>/dev/null\nmkdir -p \"${UNIVERSAL_LIBRARY_DIR}\"\nmkdir -p \"${FRAMEWORK}/Versions/A/Headers\"\nmkdir -p \"${FRAMEWORK}/Versions/A/Resources\"\n\n# Generate universal binary from desktop, device, and simulator builds.\nlipo \"${SIMULATOR_LIBRARY_PATH}\" \"${DEVICE_LIBRARY_PATH}\" -create -output \"${UNIVERSAL_LIBRARY_PATH}\"\n\n# Move files to appropriate locations in framework paths.\ncp \"${UNIVERSAL_LIBRARY_PATH}\" \"${FRAMEWORK}/Versions/A\"\ncd \"${FRAMEWORK}\"\nln -sf \"A\" \"Versions/Current\"\nln -sf \"Versions/Current/Headers\" \"Headers\"\nln -sf \"Versions/Current/Resources\" \"Resources\"\nln -sf \"Versions/Current/${PRODUCT_NAME}\" \"${PRODUCT_NAME}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D34963B80B56CAA300CAD239 /* Sources */ = {
@@ -611,6 +784,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		35B0289F1299B4F300D4689B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35B028991299B4E700D4689B /* Cleanup Chipmunk-iOS */;
+			targetProxy = 35B0289E1299B4F300D4689B /* PBXContainerItemProxy */;
+		};
 		D38687D20BAFC688008B7008 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D34963BA0B56CAA300CAD239 /* ChipmunkStatic */;
@@ -619,6 +797,48 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		35B028971299B4D900D4689B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "Chipmunk-iOS";
+			};
+			name = Debug;
+		};
+		35B028981299B4D900D4689B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = "Chipmunk-iOS";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		35B0289A1299B4E700D4689B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "Clean Chipmunk-iOS";
+			};
+			name = Debug;
+		};
+		35B0289B1299B4E700D4689B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = "Clean Chipmunk-iOS";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		D34963BF0B56CACA00CAD239 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -793,6 +1013,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		35B028A41299B53C00D4689B /* Build configuration list for PBXAggregateTarget "Cleanup Chipmunk-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35B0289A1299B4E700D4689B /* Debug */,
+				35B0289B1299B4E700D4689B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35B028A51299B53C00D4689B /* Build configuration list for PBXAggregateTarget "Chipmunk-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35B028971299B4D900D4689B /* Debug */,
+				35B028981299B4D900D4689B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D34963BE0B56CACA00CAD239 /* Build configuration list for PBXNativeTarget "ChipmunkStatic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
