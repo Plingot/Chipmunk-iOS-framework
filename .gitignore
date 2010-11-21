@@ -1,0 +1,32 @@
+#### `.gitignore`
+# xcode noise
+build/
+*.pbxuser
+*.perspective
+*.perspectivev3
+*.mode1v3
+*.move2v3
+*~.nib
+
+# SVN directories
+.svn
+
+# osx noise
+.DS_Store
+profile
+*.swp
+
+# Aptana TMP-files
+.tmp*
+
+# Aptana project
+.project
+
+# Webrat log
+webrat.log
+
+# Rails3 gitignore
+.bundle
+db/*.sqlite3
+log/*.log
+tmp/**/*
