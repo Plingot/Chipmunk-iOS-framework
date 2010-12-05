@@ -169,7 +169,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D3E5F0190AA32EAC004E361B /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 35B028991299B4E700D4689B /* Clean Chipmunk-iOS */;
+			remoteGlobalIDString = 35B028991299B4E700D4689B;
 			remoteInfo = "Clean Chipmunk-iOS";
 		};
 		D38687D10BAFC688008B7008 /* PBXContainerItemProxy */ = {
@@ -668,7 +668,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "xcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphonesimulator4.1 -target ${PROJECT_NAME}Static-iPhone -configuration ${CONFIGURATION} build\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphoneos4.1 -target ${PROJECT_NAME}Static-iPhone -configuration ${CONFIGURATION} build";
+			shellScript = "xcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphonesimulator4.2 -target ${PROJECT_NAME}Static-iPhone -configuration ${CONFIGURATION} build\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphoneos4.2 -target ${PROJECT_NAME}Static-iPhone -configuration ${CONFIGURATION} build";
 		};
 		35B028B81299B59C00D4689B /* Build universal lib */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -906,7 +906,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = "Chipmunk-iPhone";
-				SDKROOT = iphoneos4.1;
+				SDKROOT = iphoneos;
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -914,7 +914,7 @@
 		D3E5F01B0AA32EAC004E361B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
