@@ -4,9 +4,13 @@ build/
 *.pbxuser
 *.perspective
 *.perspectivev3
+*.mode1
 *.mode1v3
-*.move2v3
+*.mode2v3
 *~.nib
+*.xcworkspace
+xcuserdata
+*.swp
 
 # SVN directories
 .svn
@@ -30,3 +34,4 @@ webrat.log
 db/*.sqlite3
 log/*.log
 tmp/**/*
+Gemfile.lock

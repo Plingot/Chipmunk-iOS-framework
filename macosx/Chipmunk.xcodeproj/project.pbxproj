@@ -919,8 +919,9 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				HEADER_SEARCH_PATHS = ../include/chipmunk;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx;
 				WARNING_CFLAGS = (
 					"-Wall",
 					"-W",
@@ -939,9 +940,10 @@
 				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = ../include/chipmunk;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				OTHER_CFLAGS = "-DNDEBUG";
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx;
 				WARNING_CFLAGS = (
 					"-Wall",
 					"-W",
